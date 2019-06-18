@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <app-attributes [selectedFeature]="selectedFeature"></app-attributes>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-map (selectedFeature)="onSelectedFeature($event)"></app-map>
+    </div>
+  </div>
+</div>

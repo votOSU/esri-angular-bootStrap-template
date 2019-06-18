@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div #mapNode id="mapNode" class="col-sm-8"></div>
+    <div #legendNode id="legendNode" class="col-sm-4"></div>
+  </div>
+
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    {{ stateName }}
+  </div>
+  <div class="modal-body">
+    <span>
+      {{ stateName }} had a population of {{ pop2000 | number }} in the 2000 census.
+    </span>
+    <div class="donutChart"></div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Close</button>
+  </div>
+</ng-template>
+<!-- <div class="donutChart"></div> -->
